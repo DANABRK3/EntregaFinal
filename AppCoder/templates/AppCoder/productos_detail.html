@@ -1,0 +1,14 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}{
+
+{% block contenidoQueCambia %}
+
+Categoría: {{productos.categoria}}
+Rango de precios: {{productos.rango_precio}}
+
+  
+<a href="{%url 'Productos'%}">Regresar </a>
+
+        
+{% endblock %}

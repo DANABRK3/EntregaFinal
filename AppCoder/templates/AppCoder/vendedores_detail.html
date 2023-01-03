@@ -1,0 +1,14 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}{
+
+{% block contenidoQueCambia %}
+
+Localidad: {{vendedores.localidad}}
+Tiempo de Entrega: {{vendedores.tiempo_de_entrega}}
+Calificación: {{vendedores.calificacion}}
+  
+<a href="{%url 'List'%}">Regresar </a>
+
+        
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}{
+
+{% block contenidoQueCambia %}
+
+<form method="post">{% csrf_token %}
+    ¿Estás seguro que deseas borrar el vendedor "{{ object.localidad }}"?
+    <input type]="submit" value="Eliminar"/>
+</form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}{
+
+{% block contenidoQueCambia %}
+<h3> Productos de Marketplace</h3>
+
+    <ul>
+        {% for productos in object_list%}
+            <p> {{productos.categoria}}</p>
+            <p> 
+                <a href="{% url 'DetailProductos' productos.id %}">Ver</a>
+                <a href="{% url 'EditProductos' productos.id %}">Editar</a>
+                <a href="{% url 'DeleteProductos' productos.id %}">Eliminar</a>
+                
+               
+                
+            </p>
+            
+        {%endfor%}
+
+{% endblock %}

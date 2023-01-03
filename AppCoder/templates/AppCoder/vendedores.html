@@ -1,0 +1,23 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}{
+
+{% block contenidoQueCambia %}
+
+    <!--Aqui va lo que cambia, y lo asociado a esta vista-->
+    <h1>Vendedores</h1>
+    
+    <p>
+        OBTENÉ TODOS LOS DATOS SOBRE EL VENDEDOR
+    </p>
+
+    Completá el formulario:
+    <br>
+    <form action=""   method="post">{% csrf_token %}
+        <table>
+            {{miFormulario.as_table}}
+        </table>
+        <input type="submit",value="Listo">
+    </form>
+
+{% endblock %}

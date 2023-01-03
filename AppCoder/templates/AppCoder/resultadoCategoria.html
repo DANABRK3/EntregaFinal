@@ -1,0 +1,18 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}{
+
+{% block contenidoQueCambia %}
+    <br>
+    Información sobre el Producto que estas buscando:
+    <br>
+    Categoria : {{categoria}}
+    <br>
+    Precio : 
+    {%for productos in productos%}
+        {{productos.rango_precio}}
+        
+        <br>
+    {%endfor%}
+
+{% endblock %}
